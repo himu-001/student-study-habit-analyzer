@@ -7,7 +7,6 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.engine import URL
 from dotenv import load_dotenv
 
-
 # Project paths
 BASE_DIR = Path(__file__).resolve().parent.parent
 CSV_PATH = BASE_DIR / "data" / "Study Habits Analysis .csv"
@@ -15,7 +14,6 @@ OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 load_dotenv(BASE_DIR / ".env")
-
 
 def clean_data(df):
     # Remove whitespace from column names
